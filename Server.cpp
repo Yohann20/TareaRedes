@@ -8,7 +8,8 @@
 #include <arpa/inet.h>  // hton*()
 #include <string.h>     // memset()
 #include <unistd.h> 
-#include <iostream>
+#include <iostream> 
+#include <sys/wait.h>   // waitpid()
 using namespace std;
 //
 void jugar(int socket_cliente, struct sockaddr_in direccionCliente) {
